@@ -1,0 +1,74 @@
+    input[type="range"] {
+        min-width: 160px;
+    }
+    
+    input[type="color"] {
+        min-width: 160px;
+    }
+    
+    pagination {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    button {
+        max-width: 180px;
+    }
+    
+    #status {
+        font-size: 24px;
+    }
+    
+    #summary {
+        font-size: 24px;
+    }
+    
+    .connected {
+        color: green;
+    }
+    
+    .disconnected {
+        color: red;
+    }
+    
+    .small {
+        min-width: 100px;
+        width: 100px;
+    }
+    
+    [s4i-slider="tw-tc"] {
+        -webkit-appearance: none;
+        --range-active-border-color: rgba(255, 255, 255, 0);
+        --range-border-color: rgba(255, 255, 255, 0);
+        --range-thumb-border-color: rgba(0, 0, 0, 0.3);
+        --range-thumb-color: rgb(255, 255, 255);
+        --range-thumb-hover-color: rgb(255, 255, 255);
+        --range-thumb-active-color: rgb(255, 253, 254);
+        background: linear-gradient(45deg, rgb(255, 94, 0) 0%, rgb(255, 253, 254) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3bade3 ', endColorstr='#ff357f ', GradientType=1);
+    }
+    
+    [s4i-slider="rgbw-white"] {
+        -webkit-appearance: none;
+        --range-active-border-color: rgba(0, 0, 0, 0);
+        --range-border-color: rgba(247, 243, 243, 0);
+        --range-thumb-border-color: rgba(0, 0, 0, 0.3);
+        --range-thumb-color: rgb(255, 255, 255);
+        --range-thumb-hover-color: rgb(255, 255, 255);
+        --range-thumb-active-color: rgb(255, 253, 254);
+        background: linear-gradient(45deg, rgb(2, 2, 2) 0%, rgb(255, 253, 254) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3bade3 ', endColorstr='#ff357f ', GradientType=1);
+    }
+    
+    [s4i-slider="dim"],
+    [s4i-slider="rgbw-dim"],
+    [s4i-slider="tw-dim"] {
+        --range-active-border-color: rgb(240, 204, 43);
+        --range-border-color: rgb(240, 204, 43);
+        --range-thumb-border-color: rgba(0, 0, 0, 0.3);
+        --range-thumb-color: rgb(255, 255, 255);
+        --range-thumb-hover-color: rgb(255, 255, 255);
+        --range-thumb-active-color: rgb(255, 253, 254);
+    }
+
+/*# sourceMappingURL=/s4i-demo.c49929a5.css.map */

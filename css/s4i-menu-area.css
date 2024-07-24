@@ -1,0 +1,78 @@
+.menu.areas {
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.menu-item.area {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    padding: 0px;
+    width: 120px;
+    height: 50px;
+    border-bottom: 1px solid rgb(60,60,60);
+}
+
+.menu-item.area>.text {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    font-size: 9px;
+    width: 100px;
+    height: 50px;
+    order: 1;
+}
+
+.menu-item.area>.text>.label {
+    width: 110px;
+    height: 16px;
+    font-size: 9px;
+    order: 1;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 0px;
+}
+
+.menu-item.area.bold>.text>.label {
+    font-weight: bold;
+}
+
+
+.menu-item.area>.text>.status {
+    height: 20px;
+    font-size: 8px;
+    text-align: center;
+    align-self: stretch;
+    order: 2;
+    margin-top: 10px;
+}
+
+.menu-item.area>.text>.status.on {
+    color: rgb(30, 255, 0)
+}
+
+.menu-item.area>.text>.status.off {
+    color: rgb(255, 0, 0)
+}
+
+.menu-item.area>.indicator {
+    box-align: right;
+    padding-top: 5px;
+    padding-left: 5px;
+    margin: 2px;
+    height: 10px;
+    width: 20px;
+    font-size: 6px;
+    fill: rgba(0, 0, 0, 0);
+    order: 2;
+}
+
+.menu-item.area>.indicator>.circle {
+    color: rgb(30, 255, 0);
+}
+
+.menu-item.area.selected {
+    background-color: rgba(0, 153, 255, 0.5);
+}

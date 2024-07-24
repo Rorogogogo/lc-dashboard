@@ -1,0 +1,49 @@
+.s4i-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.s4i-menu label {
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    border-bottom: 1px solid rgba(150, 150, 150, 0.8);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.s4i-menu menu-section:hover {
+    background: rgba(0, 0, 200, 0.2);
+}
+
+.s4i-menu ul ul li {
+    padding: 10px;
+}
+
+.s4i-menu input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+}
+
+.s4i-menu input[type="checkbox"]~ul {
+    height: 0;
+    transform: scaleY(0);
+}
+
+.s4i-menu input[type="checkbox"]:checked~ul {
+    height: 100%;
+    transform-origin: top;
+    transition: transform .2s ease-out;
+    transform: scaleY(1);
+}
+
+.s4i-menu input[type="checkbox"]:checked+label {
+    border-bottom: 1px solid rgba(150, 150, 150, 0.4);
+}
+
+.s4i-menu input[type="checkbox"]:checked+label i {
+    transition: transform .2s ease-out;
+    transform: rotate(90deg);
+}

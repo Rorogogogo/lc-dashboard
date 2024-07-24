@@ -1,0 +1,32 @@
+        [s4i-type=button] {
+            text-decoration: none;
+            background-color: transparent;
+            cursor: pointer;
+            outline: none;
+            transition: 0.2s all;
+            -webkit-touch-callout: none;
+            /* iOS Safari */
+            -webkit-user-select: none;
+            /* Safari */
+            -khtml-user-select: none;
+            /* Konqueror HTML */
+            -moz-user-select: none;
+            /* Firefox */
+            -ms-user-select: none;
+            /* Internet Explorer/Edge */
+            user-select: none;
+            /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+        }
+        
+        [s4i-type=button]:default {
+            -webkit-filter: none;
+            filter: none;
+        }
+        /* Adding transformation when the button is active */
+        
+        [s4i-type=button]:active {
+            opacity: 0.5;
+            /* Scaling button to 0.98 to its original size */
+            box-shadow: 3px 2px 22px 1px rgba(87, 38, 221, 0.24);
+        }

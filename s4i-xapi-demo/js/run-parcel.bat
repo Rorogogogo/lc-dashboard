@@ -1,0 +1,1 @@
+npx parcel ./web/index.html

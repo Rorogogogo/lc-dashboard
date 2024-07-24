@@ -1,0 +1,533 @@
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(44, 42, 42) rgb(100, 100, 100);
+}
+
+.pagination {
+    width: 100%;
+}
+
+.active {
+    background-color: #522c57;
+}
+
+.pagination li {
+    display: inline-block;
+    padding: 5px;
+}
+
+
+/* Works on Chrome, Edge, and Safari */
+
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgba(8, 8, 8, 0.397);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(44, 42, 42);
+    border-radius: 0px;
+    border: 1px solid rgb(82, 80, 80);
+}
+
+[s4i-type=light-area] {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+[s4i-type=sec-area-status] {
+    font-size: 10;
+    color: rgb(255, 255, 0);
+}
+
+[s4i-type=light-area].fade {
+    opacity: 0;
+}
+
+[s4i-type=text-input] {
+    margin: 0;
+    width: 152px;
+    height: 24px;
+}
+
+[s4i-type=table] {
+    width: 100%;
+    height: 100%;
+}
+
+.bottom-bordered {
+    border-bottom: 1px solid rgb(82, 80, 80);
+}
+
+.endpoint-value {
+    display: flex;
+    flex-direction: column;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    /* If you want dots under the hoverable text */
+}
+
+.s4i-hidden {
+    display: none!important;
+}
+
+.ac-temp {
+    content: "℃";
+}
+
+
+/* Tooltip text */
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    width: 240px;
+    height: 32px;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+
+/* Show the tooltip text when you mouse over the tooltip container */
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+input[type="time"] {
+    background-color: #555;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+/* Change the appearance on focus */
+
+input[type="time"]:focus {
+    background-color: #777;
+    outline: none;
+}
+
+
+/* Change the appearance of the input invalid time */
+
+input[type="time"]:invalid {
+    background-color: #900;
+}
+
+input[type="color"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 27px;
+    height: 32px;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+}
+
+input[type='color']:disabled:hover {
+    cursor: not-allowed;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border-radius: 50%;
+    border: none;
+}
+
+input[type="color"]::-moz-color-swatch {
+    border-radius: 50%;
+    border: none;
+}
+
+.topbar {
+    background-color: rgb(0, 0, 0);
+}
+
+.red {
+    color: rgb(255, 0, 0)!important
+}
+
+.green {
+    color: rgb(145, 255, 0)!important
+}
+
+.bg-green {
+    background-color: rgb(126, 163, 77)!important
+}
+
+.blue {
+    color: rgb(0, 110, 255)!important
+}
+
+.yellow {
+    color: rgb(238, 255, 0)!important
+}
+
+.orange {
+    color: rgb(255, 145, 0)!important
+}
+
+.grey {
+    color: rgb(30, 30, 30)!important
+}
+
+.white {
+    color: rgb(255, 255, 255)!important
+}
+
+.light-grey {
+    color: rgb(104, 104, 104)!important
+}
+
+.small {
+    transform: scale(0.4);
+}
+
+.mid {
+    transform: scale(0.6);
+}
+
+.big {
+    transform: scale(0.8);
+}
+
+.large {
+    transform: scale(1.0);
+}
+
+.s4i.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    color: #ccc;
+}
+
+.heater-on {
+    border-color: rgb(255, 56, 56);
+    background-color: orange;
+}
+
+.heater-off {
+    border-color: gray;
+    background-color: #555;
+}
+
+.shade-up {
+    border-color: rgb(0, 255, 0);
+    color: rgb(0, 255, 0);
+}
+
+.shade-stop {
+    border-color: rgb(0, 85, 255);
+    color: rgb(0, 85, 255);
+}
+
+.shade-down {
+    border-color: rgb(255, 56, 56);
+    color: rgb(255, 56, 56);
+}
+
+ul.list {
+    padding: 0;
+    list-style: none;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.list li {
+    padding: 10px 20px;
+}
+
+.list li+li {
+    border-top: 1px solid #ccc;
+}
+
+tbody.list {
+    padding: 0;
+    list-style: none;
+    width: 200px;
+    border: none solid rgb(61, 60, 60);
+    border-radius: 5px;
+    margin: 20px;
+    color: darkgrey;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td.noborder {
+    border: none;
+}
+
+td.section {
+    color: rgb(235, 232, 232);
+    border: none;
+}
+
+.s4i-selected {
+    width: 100%;
+    text-align: center;
+}
+
+.s4i-select {
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    font-size: 32px;
+}
+
+.s4i-right {
+    text-align: right;
+    font-size: 10px;
+}
+
+.s4i-left {
+    text-align: left;
+    font-size: 10px;
+}
+
+.s4i-center {
+    text-align: center;
+    font-size: 10px;
+}
+
+th.id td.id {
+    min-width: 250px;
+}
+
+th.key td.key th.scope td.scope {
+    min-width: 200px;
+}
+
+th.updated_by td.updated_by {
+    min-width: 200px;
+}
+
+th.updated_time td.updated_time {
+    min-width: 150px;
+}
+
+th.created_time td.created_time {
+    min-width: 150px;
+}
+
+th.product_key td.product_key {
+    min-width: 200px;
+}
+
+th.inst_key td.inst_key {
+    min-width: 150px;
+}
+
+th.notes td.notes th.event td.event {
+    min-width: 200px;
+}
+
+th.enabled td.enabled {
+    width: 100px;
+    min-width: 100px;
+}
+
+label {
+    color: white;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+
+.sort {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 32px;
+    vertical-align: middle;
+    color: white;
+    border: none;
+}
+
+.s4i-action-icon {
+    padding: 2px;
+    margin: 2px;
+}
+
+iframe {
+    border: none;
+    margin: 0 0 0 0;
+}
+
+.sort:hover {
+    background-color: #522c57;
+    color: white;
+}
+
+body {
+    margin: 0 0 0 0;
+    padding: 0;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+#main {
+    width: 100%;
+}
+
+table.table-kv {
+    min-width: 320px!important;
+}
+
+table.table-kv>td {
+    min-width: 150px!important;
+    max-width: 150px!important;
+}
+
+.action {
+    min-width: 16px;
+}
+
+th {
+    text-align: center;
+    vertical-align: middle;
+    height: 12px;
+    background-color: rgb(26, 24, 24);
+    border: 1px solid rgb(64, 64, 64);
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+td {
+    text-align: left;
+    vertical-align: middle;
+    padding: 5px;
+    border: 1px solid rgb(64, 64, 64);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.s4i-webportal-text {
+    height: 14px;
+    font-size: 10px;
+}
+
+.s4i {
+    font-size: 10px;
+}
+
+.p-status {
+    min-width: 80px;
+}
+
+.Name {
+    min-width: 80px;
+}
+
+.MapTo {
+    min-width: 80px;
+}
+
+.Name {
+    min-width: 80px;
+}
+
+.Connection {
+    max-width: 180px;
+}
+
+input[type=text],
+input[type=password],
+textarea {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+    outline: none;
+    margin: auto;
+    border: 1px solid gray;
+    background-color: transparent;
+    color: gray;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+textarea:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    padding: 3px 0px 3px 3px;
+    margin: auto;
+    border: 1px solid rgba(81, 203, 238, 1);
+    background-color: transparent;
+    color: white;
+}
+
+input[type=button] {
+    color: white;
+    font-size: 12px;
+    border: 1px solid rgb(134, 133, 133);
+}
+
+[s4i-type=area-av] {
+    font-size: 9px;
+    text-align: center;
+}
+
+#ib-main {
+    top: 24;
+    left: 0;
+}
+
+.bordered {
+    margin: auto;
+    border-radius: 5px!important;
+    border: 1px solid rgb(157, 158, 154)!important;
+}
+
+.trigger {
+    min-width: 60px!important;
+    max-width: 60px!important;
+    padding: 3x!important;
+    font-size: 8px!important;
+    text-align: center!important;
+}
+
+.temp-label::after {
+    content: "℃";
+}
+
+@media (min-width: 1200px) {
+    body {
+        width: auto;
+        height: auto;
+        transform: scale(1)!important;
+        transform-origin: 0 0;
+    }
+}
+

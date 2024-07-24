@@ -1,0 +1,27 @@
+.fountain {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: blue;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.fountain::before,
+.fountain::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: blue;
+    opacity: 0.5;
+}
+
+.fountain::before {
+    animation: fountainEffect 1s infinite;
+}
+
+.fountain::after {
+    animation: fountainEffect 1s 0.5s infinite;
+}

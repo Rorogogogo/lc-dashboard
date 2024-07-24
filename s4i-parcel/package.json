@@ -1,0 +1,27 @@
+{
+    "name": "...",
+    "version": "...",
+    "description": "",
+    "parcel-namer-rewrite": {
+        "chain": "@parcel/namer-default",
+        "hashing": "never",
+        "disable": false,
+        "rules": {
+            "(.*)": "z_999_s4i_$1"
+        },
+        "profiles": {
+            "development": {},
+            "production": {},
+            "other-custom-profile": {}
+        }
+    },
+    "devDependencies": {
+        "@babel/plugin-proposal-class-properties": "^7.18.6",
+        "@parcel/config-default": "^2.7.0",
+        "parcel": "^2.9.1"
+    },
+    "dependencies": {
+        "mqtt": "^4.3.7",
+        "simple-jsonrpc-js": "^1.2.0"
+    }
+}

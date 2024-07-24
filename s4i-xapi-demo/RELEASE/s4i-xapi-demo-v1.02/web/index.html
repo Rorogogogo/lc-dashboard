@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/pico.css" />
+    <link rel="stylesheet" href="./css/s4i-demo.css" />
+    <link rel="stylesheet" href="./css/sortable.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S4i XAPI Websocket Client</title>
+</head>
+
+<body>
+    <main class="container">
+
+        <head>
+            <h3 align="center">S4i XAPI Demo</h3>
+            <label for="url">Server URL</label>
+            <input id="url" type="text" placeholder="ws://<Host>:<Port>" value="ws://127.0.0.1:15001">
+        </head>
+        <table>
+            <tbody>
+                <tr>
+                    <td><button id="btn-start" class="outline">Connect</button></td>
+                    <td><button id="btn-stop" class="outline">Disconnect</button></td>
+                    <td>
+                        <p id="status" class="disconnected">Disconnected</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button id="btn-query" class="outline">Query</button></td>
+                    <td>
+                        <input id="query" type="text" placeholder="Object ID (support * wildcard)" value="*">
+                    </td>
+                    <td>
+                        <p id="summary">0 objects loaded</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button id="btn-all-on" class="outline">All On</button></td>
+                    <td><button id="btn-all-off" class="outline">All Off</button></td>
+                    <td>
+                        <div class="pagination">
+                            <label for="num-obj-per-page">Number objects per page</label>
+                            <select id="num-obj-per-page" class="outline" value="50">
+                                <option>All</option>
+                                <option>3</option>
+                                <option>10</option>
+                                <option>50</option>
+                                <option>100</option>
+                                <option selected>1000</option>
+                            </select>
+                            <a href="#" id="btn-prev" class="small">Prev</a>
+                            <b id="page_summary" class="small">1</b>
+                            <a href="#" id="btn-next" class="small">Next</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <table id="objects" class="sortable">
+            </table>
+        </div>
+    </main>
+    <script src="./js/sortable.js "></script>
+    <script type="module" src="./js/app.js "></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+.menu.activities {
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    padding: 0px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+
+.menu-item.activity {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    min-width: 80px;
+    width: 80px;
+    height: 54px;
+    padding: 5px;
+}
+
+.menu-item.activity.bold{
+    border-bottom: 1px solid rgb(60,60,60);
+}
+
+.menu-item.activity>.icon {
+    margin: 3px;
+    height: 24px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.menu-item.activity>.text>.label {
+    height: 16px;
+    font-size: 12px;
+    order: 2;
+    text-align: center;
+    margin: 5px;
+}
+
+.menu-item.activity.bold>.text>.label {
+    font-weight: bold;
+}
+
+.menu-item.activity.selected {
+    background-color: rgba(0, 153, 255, 0.8);
+}

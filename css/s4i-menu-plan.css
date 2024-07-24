@@ -1,0 +1,46 @@
+.menu.plans {
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    padding: 0px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.menu-item.plan {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    min-width: 80px;
+    width: 80px;
+    height: 54px;
+    padding: 4px;
+}
+
+.menu-item.plan.bold{
+    border-right: 1px solid rgb(60,60,60);
+    border-bottom: 1px solid rgb(60,60,60);
+}
+
+
+.menu-item.plan>.icon {
+    margin: 3px;
+    height: 24px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.menu-item.plan>.text>.label {
+    height: 16px;
+    font-size: 10px;
+    order: 2;
+    text-align: center;
+    margin: 5px;
+}
+
+.menu-item.plan.selected {
+    background-color: rgba(0, 153, 255, 0.2);
+}
+
+.menu-item.plan.bold>.text>.label {
+    font-weight: bold;
+}

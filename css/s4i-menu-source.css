@@ -1,0 +1,44 @@
+.menu.sources {
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    padding: 0px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.menu-item.source.bold{
+    border-right: 1px solid rgb(60,60,60);
+    border-bottom: 1px solid rgb(60,60,60);
+}
+
+.menu-item.source {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    min-width: 80px;
+    width: 80px;
+    height: 56px;
+    padding: 4px;
+}
+
+.menu-item.source>.icon {
+    padding: 5px;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.menu-item.source>.text>.label {
+    font-size: 9px;
+    order: 2;
+    text-align: center;
+    position: relative;
+}
+
+.menu-item.source.selected {
+    background-color: rgba(0, 153, 255, 0.5);
+}
+
+.menu-item.source.bold>.text>.label {
+    font-weight: bold;
+}

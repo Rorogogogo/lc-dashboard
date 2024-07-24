@@ -1,0 +1,53 @@
+.beam.sealed {
+    border-radius: 50%;
+    fill: green;
+    border: 2px solid green;
+    animation: green-pulse 2s ease infinite;
+    text-align: center;
+    position: relative;
+}
+
+.beam.unsealed {
+    border-radius: 50%;
+    fill: yellow;
+    border: 2px solid yellow;
+    animation: yellow-pulse 2s ease infinite;
+    text-align: center;
+    position: relative;
+}
+
+.beam.armed {
+    border-radius: 50%;
+    fill: red;
+    border: 2px solid red;
+    animation: red-pulse 2s ease infinite;
+    text-align: center;
+    position: relative;
+}
+
+.beam.in-alarm {
+    border-radius: 50%;
+    fill: yellow;
+    border: 2px solid yellow;
+    animation: red-yellow-pulse 2s ease infinite;
+    text-align: center;
+    position: relative;
+}
+
+.beam.isolated {
+    border-radius: 50%;
+    fill: blue;
+    border: 2px solid blue;
+    animation: blue-pulse 2s ease infinite;
+    text-align: center;
+    position: relative;
+}
+
+.beam.init {
+    border-radius: 50%;
+    fill: white;
+    border: 2px solid white;
+    animation: disco 2s ease infinite;
+    text-align: center;
+    position: relative;
+}

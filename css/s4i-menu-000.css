@@ -1,0 +1,107 @@
+ul {
+    margin: 0;
+}
+
+ui {
+    margin: 0;
+}
+
+.menu {
+    margin: 0;
+    display: flex;
+}
+
+.menu.invisible {
+    display: none;
+}
+
+.menu-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.menu-section {
+    margin-bottom: 2px;
+}
+
+.menu-section-title {
+    display: block;
+    background-color: black;
+    cursor: pointer;
+}
+
+.menu-section-title>label {
+    color: rgb(255, 255, 255);
+    width: 110px;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-small;
+    cursor: pointer;
+}
+
+.menu-arrow-icon {
+    float: right;
+    margin-top: 2px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item {
+    margin: 0;
+    display: flex;
+    transition: all 0.2s linear;
+}
+
+
+/* Vertical layout */
+
+.menu-vertical .menu-section {
+    clear: both;
+}
+
+
+/* Horizontal layout */
+
+.menu-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-horizontal .menu-section {
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+.menu-horizontal .menu-items {
+    position: absolute;
+}
+
+.menu-item.invisible {
+    display: none;
+}
+
+.menu-item>.icon,
+.menu-item>.text {
+    color: lightgray;
+    text-align: center;
+}
+
+.menu-item>.icon {
+    order: 1;
+}
+
+.menu-item>.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 2;
+    width: 100%;
+}
+
+.menu-item>.text>.label {
+    text-align: center;
+    width: 100%;
+}

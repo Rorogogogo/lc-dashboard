@@ -1,0 +1,70 @@
+.glowing {
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.loading {
+    font-size: 48px;
+}
+
+.glowing.red {
+    -webkit-filter: drop-shadow(0 0 8px rgba(255, 153, 153, 1));
+    filter: drop-shadow(0 0 8px rgba(255, 153, 153, 1));
+}
+
+.glowing.orange {
+    -webkit-filter: drop-shadow(0 0 8px rgba(244, 173, 66, 1));
+    filter: drop-shadow(0 0 8px rgba(244, 173, 66, 1));
+}
+
+.glowing.yellow {
+    -webkit-filter: drop-shadow(0 0 8px rgba(244, 241, 66, 1));
+    filter: drop-shadow(0 0 8px rgba(244, 241, 66, 1));
+}
+
+.glowing.green {
+    -webkit-filter: drop-shadow(0 0 8px rgba(83, 244, 66, 1));
+    filter: drop-shadow(0 0 8px rgba(83, 244, 66, 1));
+}
+
+.glowing.cyan {
+    -webkit-filter: drop-shadow(0 0 8px rgba(0, 255, 221, 1));
+    filter: drop-shadow(0 0 8px rgba(0, 255, 221, 1));
+}
+
+.glowing.lightblue {
+    -webkit-filter: drop-shadow(0 0 8px rgba(0, 231, 255, 1));
+    filter: drop-shadow(0 0 8px rgba(0, 231, 255, 1));
+}
+
+.glowing.blue {
+    -webkit-filter: drop-shadow(0 0 8px rgba(0, 153, 255, 1));
+    filter: drop-shadow(0 0 8px rgba(0, 153, 255, 1));
+}
+
+.glowing.darkblue {
+    -webkit-filter: drop-shadow(0 0 8px rgba(0, 63, 255, 1));
+    filter: drop-shadow(0 0 8px rgba(0, 63, 255, 1));
+}
+
+.glowing.indigo {
+    -webkit-filter: drop-shadow(0 0 8px rgba(167, 66, 244, 1));
+    filter: drop-shadow(0 0 8px rgba(167, 66, 244, 1));
+}
+
+.glowing.purple {
+    -webkit-filter: drop-shadow(0 0 8px rgba(244, 66, 232, 1));
+    filter: drop-shadow(0 0 8px rgba(244, 66, 232, 1));
+}
+
+.glowing.magenta {
+    -webkit-filter: drop-shadow(0 0 8px rgba(255, 109, 194, 1));
+    filter: drop-shadow(0 0 8px rgba(255, 109, 194, 1));
+}
+
+.glowing.pink {
+    -webkit-filter: drop-shadow(0 0 8px rgba(255, 137, 184, 1));
+    filter: drop-shadow(0 0 8px rgba(255, 137, 184, 1));
+}

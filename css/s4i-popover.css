@@ -1,0 +1,75 @@
+.popover-items {
+    list-style: none;
+    padding: 10px;
+}
+
+.popover-item {
+    list-style-type: none;
+    margin: 10px 5px 10px 5px;
+    width: 220px;
+    height: 64px;
+}
+
+.popover-item p {
+    margin: 5px 5px 5px 5px;
+}
+
+.shade-button {
+    cursor: pointer;
+    width: 64px;
+    height: 32px;
+    margin: 2px 2px;
+    color: rgb(214, 214, 214);
+    border-radius: 10px;
+    border: 1px solid rgb(66, 66, 66);
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: normal;
+    overflow: visible;
+    text-align: center;
+}
+
+.light-scene {
+    pointer-events: auto;
+    cursor: pointer;
+    width: 200px;
+    height: 32px;
+    color: rgb(214, 214, 214);
+    border-radius: 10px;
+    border: 1px solid rgb(66, 66, 66);
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: normal;
+    overflow: visible;
+    text-align: center;
+    padding: 5px;
+    margin: 5px 5px;
+}
+
+.light-scene:hover {
+    /*opacity: 0.5;*/
+    -webkit-filter: drop-shadow(0 0 8px rgba(0, 153, 255, 1));
+    filter: drop-shadow(0 0 8px rgba(0, 153, 255, 1));
+}
+
+
+/* Adding transformation when the button is active */
+
+.light-scene:active {
+    transform: scale(0.90);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}
+
+.light-slider {
+    min-width: 200px;
+}
+
+.light-btn {
+    width: 200px;
+}
+
+.light-switch {
+    width: 100%;
+}
